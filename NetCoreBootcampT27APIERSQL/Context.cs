@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BootcampNetCoreT28ApiJwt_EX1.Models;
+using Microsoft.EntityFrameworkCore;
 using NetCoreBootcampT27APIERSQL.Models;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace NetCoreBootcampT27APIERSQL
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Pieza> Piezas { get; set; }
         public DbSet<Suministra> Suministras { get; set; }
+
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
